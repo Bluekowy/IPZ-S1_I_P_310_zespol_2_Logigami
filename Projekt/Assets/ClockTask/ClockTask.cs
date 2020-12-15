@@ -19,6 +19,28 @@ public class ClockTask: MonoBehaviour
             minute = minute - 60;
             hour = hour + 1;
         }
-        time.SetText(hour + ";" + minute);
+        if (hour >= 24)
+        {
+            hour = 0;
+        }
+        string hourstr;
+        if (hour < 10)
+        {
+            hourstr = "0" + hour.ToString();
+        }
+        else
+        {
+            hourstr = hour.ToString();
+        }
+        string minstr;
+        if (minute < 10)
+        {
+            minstr = "0" + minute.ToString();
+        }
+        else
+        {
+            minstr = minute.ToString();
+        }
+        time.SetText(hourstr + ":" + minstr);
     }
 }
