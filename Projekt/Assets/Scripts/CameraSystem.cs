@@ -3,10 +3,10 @@
 public class CameraSystem : MonoBehaviour
 {
     private GameObject player;
-    public float x_min;
-    public float x_max;
-    public float y_min;
-    public float y_max;
+    static public float x_min;
+    static public float x_max;
+    static public float y_min;
+    static public float y_max;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +16,8 @@ public class CameraSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Mathf.Clamp(player.transform.position.x, x_min, x_max);
-        float y = Mathf.Clamp(player.transform.position.y, y_min, y_max);
-        gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        float camera_x = Mathf.Clamp(player.transform.position.x, x_min, x_max);
+        float camera_y = Mathf.Clamp(player.transform.position.y, y_min, y_max);
+        gameObject.transform.position = new Vector3(camera_x, camera_y, gameObject.transform.position.z);
     }
 }
