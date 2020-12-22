@@ -39,7 +39,6 @@ public class LevelGrid
         bool far_enough_OX;
         bool far_enough_OY;
 
-
         for (i = 1; i < 3; i++)
         {
             j = i - 1;
@@ -62,6 +61,7 @@ public class LevelGrid
             }
             else
             {
+                //if place for new object not found make new one far enough from previous one
                 brickCoordinates[i].x = (brickGridPosition.x - xBORDER);
                 brickCoordinates[i].y = (brickGridPosition.y + yBORDER);
             }
