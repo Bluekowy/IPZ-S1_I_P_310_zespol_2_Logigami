@@ -545,8 +545,10 @@ GameObject:
   - component: {fileID: 173648222}
   - component: {fileID: 173648224}
   - component: {fileID: 173648223}
+  - component: {fileID: 173648225}
+  - component: {fileID: 173648226}
   m_Layer: 0
-  m_Name: tamto
+  m_Name: Task01A_object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,6 +645,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &173648225
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173648221}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
+--- !u!114 &173648226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173648221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c486ae0c85f0b5e40854adb69bbac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &267513351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,13 +1201,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b69b1cc31f7416c48ac7af9ae7644a6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 37504a048ea7d714ea674e6a3f8d073d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x_min: -5
-  x_max: 6
-  y_min: -18
-  y_max: 18
+  offset: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2887,8 +2914,10 @@ GameObject:
   - component: {fileID: 1472042952}
   - component: {fileID: 1472042951}
   - component: {fileID: 1472042950}
+  - component: {fileID: 1472042953}
+  - component: {fileID: 1472042954}
   m_Layer: 0
-  m_Name: task4_object
+  m_Name: Task_04_object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2985,6 +3014,34 @@ Transform:
   m_Father: {fileID: 2018673096}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1472042953
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472042949}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5
+--- !u!114 &1472042954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472042949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c486ae0c85f0b5e40854adb69bbac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1530566284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,8 +3822,10 @@ GameObject:
   - component: {fileID: 1813541083}
   - component: {fileID: 1813541082}
   - component: {fileID: 1813541081}
+  - component: {fileID: 1813541084}
+  - component: {fileID: 1813541085}
   m_Layer: 0
-  m_Name: task3_object
+  m_Name: Task_03_object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3863,6 +3922,34 @@ Transform:
   m_Father: {fileID: 2018673096}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813541084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813541080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c486ae0c85f0b5e40854adb69bbac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &1813541085
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813541080}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0000009536743}
+  serializedVersion: 2
+  m_Radius: 4
 --- !u!1 &1884146195
 GameObject:
   m_ObjectHideFlags: 0
