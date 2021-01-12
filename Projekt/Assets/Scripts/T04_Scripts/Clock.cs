@@ -2,19 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Clock : MonoBehaviour
 {
     public float timeRemaining = 15;
-    public bool timerIsRunning = false;
+    private bool timerIsRunning = false;
+    
     private TextMesh timeText;
+    public Slider slider;
 
     private void Start()
     {
         // Starts the timer automatically
         timerIsRunning = true;
-        timeText = gameObject.AddComponent<TextMesh>();
+        slider.maxValue = timeRemaining;
+        slider.value = timeRemaining;
     }
+
 
     void Update()
     {
@@ -23,7 +28,7 @@ public class Clock : MonoBehaviour
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
+                slider.value = timeRemaining;
             }
             else
             {
