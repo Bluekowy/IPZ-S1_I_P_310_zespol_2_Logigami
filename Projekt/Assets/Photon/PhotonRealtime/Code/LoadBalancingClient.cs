@@ -2296,7 +2296,7 @@ namespace Photon.Realtime
                         case OperationCode.CreateGame:
                         case OperationCode.Authenticate:
                         case OperationCode.AuthenticateOnce:
-                        case OperationCode.FindFriends:
+                        //case OperationCode.FindFriends:
                         case OperationCode.GetGameList:
                         case OperationCode.GetLobbyStats:
                         case OperationCode.JoinGame:
