@@ -7,6 +7,10 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public Text txtStatus = null;
     public GameObject btnStart = null;
     public byte MaxPlayers = 2;
+    //activeTaskCnt zlicza libzbę aktywnych tasków jeśli dowolny task jest aktywny to gracze nie będą już mieli tych samych scen
+    static public int activeTaskCnt = 0;
+    static public bool taskDone1 = false;
+    static public bool taskDone4 = false;
     private void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
@@ -16,7 +20,8 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         base.OnConnectedToMaster();
-        PhotonNetwork.AutomaticallySyncScene = true; // ta sama scena dla każdego gracza
+        if(activeTaskCnt == 0)
+            PhotonNetwork.AutomaticallySyncScene = true; // ta sama scena dla każdego gracza
         btnStart.SetActive(true);
         Status("Connected to " + PhotonNetwork.ServerAddress);
     }

@@ -23,16 +23,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Hit trigger!");
+        
         if (other.gameObject.name == "Brick")
         {
             collectedObjects++;
+            Debug.Log("Hit brick trigger!");
             Destroy(other.gameObject);
             if (collectedObjects == LevelGrid.NO_BRICKS)
             {
+                NetworkController.taskDone4 = true;
+                --NetworkController.activeTaskCnt;
                 SceneManager.LoadScene("SampleScene");
             }
         }
-
-    }
+   }
 }
