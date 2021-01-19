@@ -15,10 +15,11 @@ public class ClockTask: MonoBehaviour
     public GameObject clock4;
     public GameObject clock5;
     public GameObject clock6;
-    int ktoryClock;
-    int win;
-    public void onStart()
+    public int ktoryClock;
+
+    private void Start()
     {
+        ktoryClock = NetworkController.clock;
         if (ktoryClock == 1)
         {
             clock1.SetActive(true);
@@ -93,42 +94,42 @@ public class ClockTask: MonoBehaviour
         {
             if (hour == 0 && minute == 45)
             {
-                win = 1;
+                NetworkController.taskDone3 = true;
             }
         }
         else if (ktoryClock == 2)
         {
             if (hour == 7 && minute == 15)
             {
-                win = 1;
+                NetworkController.taskDone3 = true;
             }
         }
         else if (ktoryClock == 3)
         {
             if (hour == 9 && minute == 0)
             {
-                win = 1;
+                NetworkController.taskDone3 = true;
             }
         }
         else if (ktoryClock == 4)
         {
             if (hour == 4 && minute == 5)
             {
-                win = 1;
+                NetworkController.taskDone3 = true;
             }
         }
         else if (ktoryClock == 5)
         {
             if (hour == 4 && minute == 45)
             {
-                win = 1;
+                NetworkController.taskDone3 = true;
             }
         }
         else if (ktoryClock == 6)
         {
             if (hour == 10 && minute == 55)
             {
-                win = 1;
+                NetworkController.taskDone3 = true;
             }
         }
         SceneManager.LoadScene("SampleScene");

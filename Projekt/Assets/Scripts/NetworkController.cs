@@ -10,12 +10,17 @@ public class NetworkController : MonoBehaviourPunCallbacks
     //activeTaskCnt zlicza libzbę aktywnych tasków jeśli dowolny task jest aktywny to gracze nie będą już mieli tych samych scen
     static public int activeTaskCnt = 0;
     static public bool taskDone1 = false;
+    static public bool taskDone3 = false;
     static public bool taskDone4 = false;
+    static public int clock = 1;
+
     private void Start()
-    {
+    {   
         PhotonNetwork.ConnectUsingSettings();
         btnStart.SetActive(false);
         Status("Connecting to server");
+        clock = UnityEngine.Random.Range(1, 6);
+        Debug.Log("clock:" + clock);
     }
     public override void OnConnectedToMaster()
     {
