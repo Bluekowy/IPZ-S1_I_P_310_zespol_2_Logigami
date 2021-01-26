@@ -6,7 +6,7 @@ public class ChatWinUI : MonoBehaviourPun
     [SerializeField] ChatItemUI toChatItem;
     [SerializeField] Transform context;
     [SerializeField] InputField inputtxt;
-    public PlayerInfo playerinfo;
+    //public PlayerInfo playerinfo;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -22,7 +22,7 @@ public class ChatWinUI : MonoBehaviourPun
     private void Message()
     {
         if (string.IsNullOrEmpty(inputtxt.text)) { return; }
-        if (playerinfo = null) { return; }
+        //if (playerinfo = null) { return; }
         photonView.RPC("ReceiveMessageRPC", RpcTarget.All, inputtxt.text);
         //photonView.RPC("MessageRPC", RpcTarget.All, inputtxt.text);
         //InstantiateChatItem(inputtxt.text);

@@ -15,7 +15,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
     static public int clock = 1;
 
     private void Start()
-    {   
+    {
         PhotonNetwork.ConnectUsingSettings();
         btnStart.SetActive(false);
         Status("Connecting to server");
@@ -25,7 +25,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         base.OnConnectedToMaster();
-        if(activeTaskCnt == 0)
+        if (activeTaskCnt == 0)
             PhotonNetwork.AutomaticallySyncScene = true; // ta sama scena dla każdego gracza
         btnStart.SetActive(true);
         Status("Connected to " + PhotonNetwork.ServerAddress);
