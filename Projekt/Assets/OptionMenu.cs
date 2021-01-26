@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class OptionMenu : MonoBehaviour
 {
     List<int> width = new List<int>() { 1024, 1280, 1920 };
@@ -12,6 +12,7 @@ public class OptionMenu : MonoBehaviour
         int wdt = width[i];
         int hgt = height[i];
         Screen.SetResolution(wdt, hgt, fullscreen);
+
     }
     public void SetFullscreen(bool isFullscreen)
     {

@@ -36,6 +36,19 @@ public class GameController : MonoBehaviourPunCallbacks
         }
         
     }
+    public void ChangeMasterClientifAvailble()
+    {
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            return;
+        }
+        if (PhotonNetwork.CurrentRoom.PlayerCount <= 1)
+        {
+            return;
+        }
+
+        PhotonNetwork.SetMasterClient(PhotonNetwork.MasterClient.GetNext());
+    }
     public void OnChatButtonPressed()
     {
         ChatWinUI.SetActive(!ChatWinUI.activeInHierarchy);

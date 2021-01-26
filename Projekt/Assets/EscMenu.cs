@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
-public class EscMenu : MonoBehaviourPunCallbacks
+public class EscMenu : MonoBehaviour
 {
     public static bool EscClicked = false;
     public GameObject EscMenuUI;
@@ -31,19 +31,6 @@ public class EscMenu : MonoBehaviourPunCallbacks
         EscMenuUI.SetActive(true);
         EscClicked = true;
     }
-    /*List<int> width = new List<int>() { 1024, 1280, 1920 };
-    List<int> height = new List<int>() { 768, 720, 1080 };
-    public void SetScreenSize(int i)
-    {
-        bool fullscreen = Screen.fullScreen;
-        int wdt = width[i];
-        int hgt = height[i];
-        Screen.SetResolution(wdt, hgt, fullscreen);
-    }
-    public void SetFullscreen(bool isFullscreen)
-    {
-        Screen.fullScreen = isFullscreen;
-    }*/
     /*public void BackToMainMenu()
     {
         PhotonNetwork.LeaveRoom();
@@ -68,10 +55,13 @@ public class EscMenu : MonoBehaviourPunCallbacks
     IEnumerator BackToMainMenu()
     {
         PhotonNetwork.Disconnect();
+        //PhotonNetwork.LeaveRoom();
         while (PhotonNetwork.IsConnected)
+        //while (PhotonNetwork.InRoom)
             yield return null;
         SceneManager.LoadScene("MainMenu");
     }
+
     /*IEnumerator BackToMainMenu()
     {
         PhotonNetwork.LeaveRoom();
