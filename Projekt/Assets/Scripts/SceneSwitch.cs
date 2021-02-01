@@ -9,7 +9,7 @@ public class SceneSwitch : MonoBehaviour
     {
 
         Debug.Log(NetworkController.taskDone3);
-        Debug.Log("You've entered the trigger!");
+        Debug.Log("You've entered the SceneSwitch trigger!");
        if (Input.GetKey(KeyCode.E))
           {
             string task_scene = this.gameObject.name.Substring(0,7);

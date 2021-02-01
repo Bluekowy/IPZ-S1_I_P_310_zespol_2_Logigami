@@ -22,7 +22,7 @@ public class Clock : MonoBehaviour
 
 
     void Update()
-    {
+    {  
         if (timerIsRunning)
         {
             if (timeRemaining > 0)
