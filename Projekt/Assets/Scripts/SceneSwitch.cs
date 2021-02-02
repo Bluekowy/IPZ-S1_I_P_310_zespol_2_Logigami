@@ -8,7 +8,7 @@ public class SceneSwitch : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
 
-        Debug.Log(NetworkController.taskDone3);
+        Debug.Log(NetworkController.taskDoneCoop1);
         Debug.Log("You've entered the trigger!");
        if (Input.GetKey(KeyCode.E))
           {

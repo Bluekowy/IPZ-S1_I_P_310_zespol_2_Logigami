@@ -12,7 +12,14 @@ public class NetworkController : MonoBehaviourPunCallbacks
     static public bool taskDone1 = false;
     static public bool taskDone3 = false;
     static public bool taskDone4 = false;
+    static public bool taskDoneCoop1 = false;
     static public int clock = 1;
+    static public int dis1 = 100;
+    static public int dis2 = 100;
+    static public int dis3 = 100;
+    static public int dis4 = 100;
+    static public int dis5 = 100;
+    static public int dis6 = 100;
 
     private void Start()
     {
@@ -20,7 +27,13 @@ public class NetworkController : MonoBehaviourPunCallbacks
         btnStart.SetActive(false);
         Status("Connecting to server");
         clock = UnityEngine.Random.Range(1, 6);
-        Debug.Log("clock:" + clock);
+        dis1 = UnityEngine.Random.Range(0, 101);
+        dis2 = UnityEngine.Random.Range(0, 101);
+        dis3 = UnityEngine.Random.Range(0, 101);
+        dis4 = UnityEngine.Random.Range(0, 101);
+        dis5 = UnityEngine.Random.Range(0, 101);
+        dis6 = UnityEngine.Random.Range(0, 101);
+
     }
     public override void OnConnectedToMaster()
     {

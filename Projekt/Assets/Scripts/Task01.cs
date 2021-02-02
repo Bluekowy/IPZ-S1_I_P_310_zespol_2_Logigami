@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Task01 : MonoBehaviour
 {
@@ -46,5 +47,10 @@ public class Task01 : MonoBehaviour
         yield return new WaitForSeconds(codeResetTimeInSeconds);
         inputCode.text = string.Empty;
         isResetting = false;
+    }
+
+    public void exitTask()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }

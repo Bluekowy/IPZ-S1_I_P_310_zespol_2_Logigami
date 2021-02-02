@@ -175,6 +175,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderText: {fileID: 1550490226}
+  display1: {fileID: 0}
+  display2: {fileID: 0}
+  display3: {fileID: 0}
+  display4: {fileID: 0}
+  display5: {fileID: 0}
+  display6: {fileID: 0}
 --- !u!1 &73535631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1151,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderText: {fileID: 1055427142}
+  display1: {fileID: 0}
+  display2: {fileID: 0}
+  display3: {fileID: 0}
+  display4: {fileID: 0}
+  display5: {fileID: 0}
+  display6: {fileID: 0}
 --- !u!1 &546940117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,6 +1376,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderText: {fileID: 1697541382}
+  display1: {fileID: 0}
+  display2: {fileID: 0}
+  display3: {fileID: 0}
+  display4: {fileID: 0}
+  display5: {fileID: 0}
+  display6: {fileID: 0}
 --- !u!1 &634257782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,6 +2814,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderText: {fileID: 0}
+  display1: {fileID: 1550490226}
+  display2: {fileID: 0}
+  display3: {fileID: 0}
+  display4: {fileID: 0}
+  display5: {fileID: 0}
+  display6: {fileID: 0}
 --- !u!223 &1102886456
 Canvas:
   m_ObjectHideFlags: 0
@@ -3209,6 +3233,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderText: {fileID: 1097466120}
+  display1: {fileID: 0}
+  display2: {fileID: 0}
+  display3: {fileID: 0}
+  display4: {fileID: 0}
+  display5: {fileID: 0}
+  display6: {fileID: 0}
 --- !u!1 &1213696322
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,6 +3609,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderText: {fileID: 1528533567}
+  display1: {fileID: 0}
+  display2: {fileID: 0}
+  display3: {fileID: 0}
+  display4: {fileID: 0}
+  display5: {fileID: 0}
+  display6: {fileID: 0}
 --- !u!1 &1357694649
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,7 +4457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00000047683716, y: 0}
+  m_AnchoredPosition: {x: -0.00000011920929, y: 0}
   m_SizeDelta: {x: 5, y: 2}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!1 &1564360293
@@ -4696,7 +4732,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1697541379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4ec683f33a4e2b458783047dc8d0ab5, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1697541382
@@ -4963,7 +4999,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7321333}
-        m_TargetAssemblyTypeName: TaskCoop_01, Assembly-CSharp
+        m_TargetAssemblyTypeName: TaskCoop_01A, Assembly-CSharp
         m_MethodName: Slider_Changed
         m_Mode: 0
         m_Arguments:
@@ -5420,6 +5456,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderText: {fileID: 447435579}
+  display1: {fileID: 0}
+  display2: {fileID: 0}
+  display3: {fileID: 0}
+  display4: {fileID: 0}
+  display5: {fileID: 0}
+  display6: {fileID: 0}
 --- !u!1 &1937370747
 GameObject:
   m_ObjectHideFlags: 0
