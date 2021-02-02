@@ -1809,7 +1809,6 @@ MonoBehaviour:
   toChatItem: {fileID: 9036738856854295111, guid: 1ca4ebdb7f99d1e4b80eb656a6b78098, type: 3}
   context: {fileID: 387143133}
   inputtxt: {fileID: 45737273}
-  playerinfo: {fileID: 0}
 --- !u!114 &861156624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2228,8 +2227,10 @@ GameObject:
   - component: {fileID: 1082543181}
   - component: {fileID: 1082543183}
   - component: {fileID: 1082543182}
+  - component: {fileID: 1082543184}
+  - component: {fileID: 1082543185}
   m_Layer: 0
-  m_Name: task1_object
+  m_Name: Task_01_object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,6 +2327,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1082543184
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082543180}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
+--- !u!114 &1082543185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082543180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c486ae0c85f0b5e40854adb69bbac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1086668020
 GameObject:
   m_ObjectHideFlags: 0

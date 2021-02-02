@@ -122,6 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 30
   rb: {fileID: 5665851983393163940}
+  gameController: {fileID: 0}
+  canMove: 1
 --- !u!61 &5665851983393163942
 BoxCollider2D:
   m_ObjectHideFlags: 0
