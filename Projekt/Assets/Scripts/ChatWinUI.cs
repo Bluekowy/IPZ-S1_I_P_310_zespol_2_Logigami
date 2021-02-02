@@ -6,7 +6,6 @@ public class ChatWinUI : MonoBehaviourPun
     [SerializeField] ChatItemUI toChatItem;
     [SerializeField] Transform context;
     [SerializeField] InputField inputtxt;
-    //public PlayerInfo playerinfo;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))

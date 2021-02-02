@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using Photon.Pun;
 using System.IO;
 //public class GameController : MonoBehaviourPun
@@ -7,15 +8,21 @@ public class GameController : MonoBehaviourPunCallbacks
     public Transform[] Spawn = null;
     public GameObject ChatWinUI;
     public bool IsChatActive { get { return ChatWinUI.activeInHierarchy; } }
-    public GameObject playerPrefab;
+    //public GameObject playerPrefab;
     //public Transform[] playerModels;
     private PhotonView PV;
+    private PlayerMovement playerMovement;
+    //public static bool canMove = true;
     /*void Awake()
     {
         int i = PhotonNetwork.CurrentRoom.PlayerCount - 1;
         PhotonNetwork.Instantiate(Path.Combine("PlayerA", "PlayerB"), Spawn[i].position, Spawn[i].rotation);
         
     }*/
+    void Start()
+    {
+        playerMovement = FindObjectOfType<PlayerMovement>();
+    }
     private void Awake()
     {
         //if (!PhotonNetwork.IsMasterClient)
@@ -28,13 +35,14 @@ public class GameController : MonoBehaviourPunCallbacks
             PhotonNetwork.Instantiate("PlayerA", Spawn[i].position, Spawn[i].rotation, 0);
             //GameObject newPlayer = PhotonNetwork.Instantiate(playerModels[0], Spawn[i].position, Spawn[i].rotation);
             //GameObject newPlayer = PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+
         }
         else
         {
             int i = PhotonNetwork.CurrentRoom.PlayerCount - 1;
             PhotonNetwork.Instantiate("PlayerB", Spawn[i].position, Spawn[i].rotation, 0);
         }
-        
+
     }
     public void ChangeMasterClientifAvailble()
     {
@@ -51,6 +59,14 @@ public class GameController : MonoBehaviourPunCallbacks
     }
     public void OnChatButtonPressed()
     {
+        if (playerMovement.canMove == true)
+        {
+            playerMovement.canMove = false;
+        }
+        else
+        {
+            playerMovement.canMove = true;
+        }
         ChatWinUI.SetActive(!ChatWinUI.activeInHierarchy);
     }
 }
