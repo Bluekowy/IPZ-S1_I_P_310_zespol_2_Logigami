@@ -19,12 +19,21 @@ public class GameController : MonoBehaviourPunCallbacks
         PhotonNetwork.Instantiate(Path.Combine("PlayerA", "PlayerB"), Spawn[i].position, Spawn[i].rotation);
         
     }*/
+
+    static public bool door = false;
+    public GameObject door1;
+    public GameObject door2;
     void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
     }
     private void Awake()
     {
+        if (door == true)
+        {
+            door1.SetActive(false);
+            door2.SetActive(true);
+        }
         //if (!PhotonNetwork.IsMasterClient)
         //    return;
         if (PhotonNetwork.IsMasterClient)

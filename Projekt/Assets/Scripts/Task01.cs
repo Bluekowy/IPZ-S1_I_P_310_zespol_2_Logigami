@@ -10,7 +10,8 @@ public class Task01 : MonoBehaviour
     public int codeLength = 5;
     public float codeResetTimeInSeconds = 0.5f;
     private bool isResetting = false;
-    public GameObject card;  
+    public GameObject card;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,7 @@ public class Task01 : MonoBehaviour
         if (inputCode.text == cardCode.text)
         {
             inputCode.text = "Success";
+            GameController.door = true;
             StartCoroutine(ResetCode());
         }
         else if(inputCode.text.Length >= codeLength)

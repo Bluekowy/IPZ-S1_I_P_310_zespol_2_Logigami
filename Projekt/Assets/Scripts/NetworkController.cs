@@ -20,7 +20,6 @@ public class NetworkController : MonoBehaviourPunCallbacks
     static public int dis4 = 100;
     static public int dis5 = 100;
     static public int dis6 = 100;
-
     private void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
@@ -35,6 +34,8 @@ public class NetworkController : MonoBehaviourPunCallbacks
         dis6 = UnityEngine.Random.Range(0, 101);
 
     }
+
+    
     public override void OnConnectedToMaster()
     {
         base.OnConnectedToMaster();
