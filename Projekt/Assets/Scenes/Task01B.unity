@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 95389656}
   - component: {fileID: 95389655}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextH2O
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 186074629}
   - component: {fileID: 186074628}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextVent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 336258005}
   - component: {fileID: 336258004}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextAcid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2168,7 +2168,7 @@ GameObject:
   - component: {fileID: 1250593759}
   - component: {fileID: 1250593758}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextOil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2710,7 +2710,7 @@ GameObject:
   - component: {fileID: 1823311247}
   - component: {fileID: 1823311246}
   m_Layer: 0
-  m_Name: Text (1)
+  m_Name: TextCO2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3151,7 +3151,7 @@ GameObject:
   - component: {fileID: 2077930945}
   - component: {fileID: 2077930944}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextPower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

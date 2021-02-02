@@ -2815,11 +2815,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderText: {fileID: 0}
   display1: {fileID: 1550490226}
-  display2: {fileID: 0}
-  display3: {fileID: 0}
-  display4: {fileID: 0}
-  display5: {fileID: 0}
-  display6: {fileID: 0}
+  display2: {fileID: 1697541382}
+  display3: {fileID: 447435579}
+  display4: {fileID: 1055427142}
+  display5: {fileID: 1528533567}
+  display6: {fileID: 1097466120}
 --- !u!223 &1102886456
 Canvas:
   m_ObjectHideFlags: 0

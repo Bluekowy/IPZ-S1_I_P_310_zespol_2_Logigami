@@ -54,7 +54,7 @@ public class ClockTask: MonoBehaviour
             minute = minute - 60;
             hour = hour + 1;
         }
-        if (hour >= 24)
+        if (hour >= 12)
         {
             hour = 0;
         }
@@ -65,7 +65,7 @@ public class ClockTask: MonoBehaviour
         }
         if (hour < 0)
         {
-            hour = 23;
+            hour = 11;
         }
         string hourstr;
         if (hour < 10)

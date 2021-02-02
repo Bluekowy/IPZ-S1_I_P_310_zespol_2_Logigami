@@ -1129,7 +1129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &468781890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1294,6 +1294,7 @@ MonoBehaviour:
   inputCode: {fileID: 1980184750}
   codeLength: 5
   codeResetTimeInSeconds: 0.5
+  card: {fileID: 468781889}
 --- !u!114 &532386601
 MonoBehaviour:
   m_ObjectHideFlags: 0

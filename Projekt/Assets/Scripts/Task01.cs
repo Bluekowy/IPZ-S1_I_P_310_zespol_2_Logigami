@@ -10,6 +10,7 @@ public class Task01 : MonoBehaviour
     public int codeLength = 5;
     public float codeResetTimeInSeconds = 0.5f;
     private bool isResetting = false;
+    public GameObject card;  
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,12 @@ public class Task01 : MonoBehaviour
         }
         cardCode.text = code;
         inputCode.text = string.Empty;
+        if (NetworkController.taskDone3 == true &&
+            NetworkController.taskDone4 == true && 
+            NetworkController.taskDoneCoop1 == true)
+        {
+            card.SetActive(true);
+        }
     }
 
     // Update is called once per frame
